@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NordTruck LTDA – Transporte internacional confiable entre Chile y Bolivia</title>
+  <meta name="description" content="NordTruck LTDA: transporte internacional Chile–Bolivia con enfoque en puntualidad, seguridad y rastreo de mercancías."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo.png" alt="NordTruck LTDA" class="logo"/>
+        <span>NordTruck LTDA</span>
+      </div>
+      <nav class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#rastreo">Rastreo</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="inicio" class="hero">
+    <img src="assets/hero-truck.jpg" alt="Transporte internacional" class="hero-bg" />
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1>Transporte internacional confiable entre Chile y Bolivia</h1>
+      <p>Exportación e importación con seguridad, puntualidad y trazabilidad en todo momento.</p>
+      <a href="#rastreo" class="btn btn-primary">Rastrear mi envío</a>
+    </div>
+  </section>
+
+  <section id="nosotros" class="section">
+    <div class="container grid-2">
+      <div>
+        <h2>Nosotros</h2>
+        <p>
+          En <strong>NordTruck LTDA</strong> operamos desde Iquique (Chile), realizando exportaciones a Bolivia e importaciones desde Bolivia, según la necesidad de cada cliente. Nos distingue la <strong>confianza</strong>: entregas a tiempo y sin daños.
+        </p>
+        <ul class="checks">
+          <li>Operación transfronteriza 24/7</li>
+          <li>Experiencia en rutas clave: Colchane–Pisiga y Chungará–Tambo Quemado</li>
+          <li>Atención personalizada y trazabilidad</li>
+        </ul>
+      </div>
+      <div class="card">
+        <img src="assets/service-1.jpg" alt="Logística Andina" />
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios" class="section muted">
+    <div class="container">
+      <h2>Servicios</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Transporte Internacional</h3>
+          <p>Movilizamos carga entre Chile y Bolivia por las principales rutas con control y seguridad.</p>
+        </article>
+        <article class="card">
+          <h3>Gestión Aduanera</h3>
+          <p>Coordinación con Aduana Interior La Paz y apoyo documental para una liberación ágil.</p>
+        </article>
+        <article class="card">
+          <h3>Entrega Final</h3>
+          <p>Despacho al cliente en destino con verificación y cuidado de la mercancía.</p>
+        </article>
+      </div>
+      <div class="note">
+        <strong>Tarifas:</strong> se cotizan de forma personalizada según la necesidad del cliente.
+      </div>
+    </div>
+  </section>
+
+  <section id="rastreo" class="section">
+    <div class="container">
+      <h2>Rastreo de mercancías</h2>
+      <p>Ingresa tu código de rastreo (ejemplo: <code>CL-BOL-001</code>)</p>
+      <div class="track-box">
+        <input id="codigo" type="text" placeholder="CL-BOL-001" autocomplete="off" />
+        <button id="btnBuscar" class="btn btn-primary">Buscar</button>
+      </div>
+      <div id="resultado" class="resultado"></div>
+      <div id="map" class="map" style="display:none;"></div>
+    </div>
+  </section>
+
+  <section id="contacto" class="section muted">
+    <div class="container grid-2">
+      <div>
+        <h2>Contacto</h2>
+        <ul class="contact-list">
+          <li><strong>Dirección:</strong> ZOFRI, Iquique – Chile</li>
+          <li><strong>Teléfono:</strong> +56 9 40822705</li>
+          <li><strong>Correo:</strong> NordTruckLTDA@gmail.com</li>
+        </ul>
+        <p>¿Listo para cotizar? Escríbenos y te responderemos a la brevedad.</p>
+      </div>
+      <form class="card" action="mailto:NordTruckLTDA@gmail.com" method="post" enctype="text/plain">
+        <label>Nombre
+          <input type="text" name="nombre" required>
+        </label>
+        <label>Correo
+          <input type="email" name="correo" required>
+        </label>
+        <label>Mensaje
+          <textarea name="mensaje" rows="4" required></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">Enviar</button>
+        <p class="tiny">*En GitHub Pages puedes usar <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a> si prefieres sin mailto.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> NordTruck LTDA</span>
+      <span>Transporte internacional Chile–Bolivia</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
