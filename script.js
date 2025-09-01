@@ -83,18 +83,18 @@ async function buscar(){
   const input = $("#codigo");
   const codeRaw = (input.value||"").trim().toUpperCase();
   const res = $("#resultado");
-  if(!codeRaw){ res.innerHTML = `<p class="warn">Ingresa tu código.</p>`; return; }
+  if(!codeRaw){ res.innerHTML = `<p class="warn">Ingresa tu código (ej: CL-BOL-001).</p>`; input.focus(); return; }
   res.innerHTML = `<p>Cargando…</p>`;
 
   try{
     const data = await fetchData();
     const envio = data[codeRaw];
-    if(!envio){ res.innerHTML = `<p class="warn">Código no encontrado.</p>`; return; }
+    if(!envio){ res.innerHTML = `<p class="warn">Código no encontrado. Verifica y vuelve a intentar.</p>`; return; }
     const rutaDef = ROUTES[envio.ruta_id];
     renderResult(codeRaw, envio, rutaDef);
   }catch(err){
     console.error(err);
-    res.innerHTML = `<p class="warn">No se pudo obtener la información de rastreo.</p>`;
+    res.innerHTML = `<p class="warn">No se pudo obtener la información de rastreo. Intente nuevamente.</p>`;
   }
 }
 
