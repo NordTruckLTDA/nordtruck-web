@@ -92,6 +92,7 @@
     </div>
   </section>
 
+  <!-- CONTACTO -->
   <section id="contacto" class="section muted">
     <div class="container grid-2">
       <div>
@@ -103,19 +104,29 @@
         </ul>
         <p>¿Listo para cotizar? Escríbenos y te responderemos a la brevedad.</p>
       </div>
-      <form class="card" action="mailto:NordTruckLTDA@gmail.com" method="post" enctype="text/plain">
+      <!-- Formspree integrado -->
+      <form id="contact-form" class="card" action="https://formspree.io/f/mdkldbjb" method="POST">
         <label>Nombre
           <input type="text" name="nombre" required>
         </label>
         <label>Correo
-          <input type="email" name="correo" required>
+          <input type="email" name="_replyto" required>
         </label>
         <label>Mensaje
           <textarea name="mensaje" rows="4" required></textarea>
         </label>
+
+        <!-- Anti-spam -->
+        <input type="text" name="_gotcha" style="display:none" />
+
+        <!-- Opcional: asunto del correo -->
+        <input type="hidden" name="_subject" value="Nuevo mensaje desde sitio NordTruck">
+
         <button class="btn btn-primary" type="submit">Enviar</button>
-        <p class="tiny">*En GitHub Pages puedes usar <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a> si prefieres sin mailto.</p>
       </form>
+
+      <!-- Mensajes dinámicos de éxito/error -->
+      <div id="contact-msg" role="status" aria-live="polite"></div>
     </div>
   </section>
 
