@@ -102,3 +102,50 @@ document.addEventListener("DOMContentLoaded", ()=>{
   $("#btnBuscar")?.addEventListener("click", buscar);
   $("#codigo")?.addEventListener("keydown", (e)=>{ if(e.key==="Enter"){ e.preventDefault(); buscar(); }});
 });
+// ===== Formulario de contacto (Formspree con AJAX) =====
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contact-form");
+  const msgBox = document.getElementById("contact-msg");
+
+  if (!form) return;
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const submitBtn = form.querySelector("button[type='submit']");
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Enviando…";
+    msgBox.textContent = "";
+
+    const formData = new FormData(form);
+
+    try {
+      const res = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: { Accept: "application/json" },
+      });
+
+      if (res.ok) {
+        msgBox.style.color = "green";
+        msgBox.style.marginTop = "1rem";
+        msgBox.textContent = "✅ Gracias, tu mensaje fue enviado correctamente.";
+        form.reset();
+      } else {
+        msgBox.style.color = "darkred";
+        msgBox.style.marginTop = "1rem";
+        msgBox.textContent =
+          "⚠️ Ocurrió un error al enviar. Intenta nuevamente.";
+      }
+    } catch (err) {
+      msgBox.style.color = "darkred";
+      msgBox.style.marginTop = "1rem";
+      msgBox.textContent =
+        "⚠️ No se pudo conectar con el servidor. Revisa tu conexión.";
+      console.error(err);
+    }
+
+    submitBtn.disabled = false;
+    submitBtn.textContent = "Enviar";
+  });
+});
