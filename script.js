@@ -1,6 +1,6 @@
 // ===== Config =====
-const DATA_SOURCE = "sheets";
-let SHEETS_URL = "https://script.google.com/macros/s/AKfycbyg9bbJIXmYLvZMFOPpHGgVke1ekzOinK9xZIwb5UJEpnFAvbrSi4Eu_PrNPPObYlWkHg/exec";
+const DATA_SOURCE = "json"; // usamos el JSON local
+const JSON_URL = "tracking.json"; // archivo en tu repo
 
 // ===== Util =====
 const $ = (q) => document.querySelector(q);
