@@ -1,5 +1,5 @@
 // ===== Config =====
-const DATA_SOURCE = "sheets"; // ahora usamos Google Sheets
+const DATA_SOURCE = "sheets";
 let SHEETS_URL = "https://script.google.com/macros/s/AKfycbyg9bbJIXmYLvZMFOPpHGgVke1ekzOinK9xZIwb5UJEpnFAvbrSi4Eu_PrNPPObYlWkHg/exec";
 
 // ===== Util =====
