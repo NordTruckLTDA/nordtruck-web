@@ -1,7 +1,6 @@
 // ===== Config =====
-const DATA_SOURCE = "json"; // "json" | "sheets"
-const JSON_URL = "tracking.json";
-let SHEETS_URL = "";
+const DATA_SOURCE = "sheets"; // ahora usamos Google Sheets
+let SHEETS_URL = "https://script.google.com/macros/s/AKfycbyg9bbJIXmYLvZMFOPpHGgVke1ekzOinK9xZIwb5UJEpnFAvbrSi4Eu_PrNPPObYlWkHg/exec";
 
 // ===== Util =====
 const $ = (q) => document.querySelector(q);
