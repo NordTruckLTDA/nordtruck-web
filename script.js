@@ -7,6 +7,22 @@ const $ = (q) => document.querySelector(q);
 const yearEl = $("#year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+// ===== Función simple para formatear fechas =====
+function formatDate(val) {
+  if (!val) return "—";
+  try {
+    const d = new Date(val);
+    if (!isNaN(d)) {
+      return d.getDate().toString().padStart(2,"0") + "/" +
+             (d.getMonth()+1).toString().padStart(2,"0") + "/" +
+             d.getFullYear();
+    }
+    return val;
+  } catch {
+    return val;
+  }
+}
+
 // ===== Rutas =====
 const ROUTES = {
   "iq_lpz_pisiga": { name: "Iquique → La Paz (Colchane–Pisiga)", stops: ["Iquique","Alto Hospicio","Huara","Colchane","Pisiga","Sabaya","Oruro","Caracollo","Sica Sica","La Paz"] },
@@ -44,7 +60,7 @@ function renderResult(code, envio, rutaDef){
     historialHtml = `
       <div class="kv" style="margin-top:.5rem">
         <div><strong>Historial</strong></div><div></div>
-        ${envio.historial.map(ev => `<div>${ev.fecha||""}</div><div>${ev.ubicacion||""} – ${ev.nota||""}</div>`).join("")}
+        ${envio.historial.map(ev => `<div>${formatDate(ev.fecha)||""}</div><div>${ev.ubicacion||""} – ${ev.nota||""}</div>`).join("")}
       </div>
     `;
   }
@@ -55,10 +71,10 @@ function renderResult(code, envio, rutaDef){
         <div><strong>Código</strong></div><div>${code}</div>
         <div><strong>Estado</strong></div><div><span class="badge">${envio.estado}</span></div>
         <div><strong>Última ubicación</strong></div><div>${envio.ultima_ubicacion||"—"}</div>
-        <div><strong>Fecha estimada</strong></div><div>${envio.fecha_estimada||"Variable según mercancía"}</div>
+        <div><strong>Fecha estimada</strong></div><div>${formatDate(envio.fecha_estimada)||"Variable según mercancía"}</div>
         <div><strong>Ruta</strong></div><div>${rutaDef ? rutaDef.name : (envio.ruta_id||"—")}</div>
         <div><strong>Origen → Destino</strong></div><div>${envio.origen||"—"} → ${envio.destino||"—"}</div>
-        <div><strong>Actualizado</strong></div><div>${envio.actualizado||"—"}</div>
+        <div><strong>Actualizado</strong></div><div>${formatDate(envio.actualizado)||"—"}</div>
       </div>
       ${timelineHtml}
       ${historialHtml}
@@ -82,34 +98,13 @@ async function buscar(){
   const input = $("#codigo");
   const codeRaw = (input.value||"").trim().toUpperCase();
   const res = $("#resultado");
-  if(!codeRaw){ 
-    res.innerHTML = `<p class="warn">Ingresa tu código (ej: CL-BOL-001).</p>`; 
-    input.focus(); 
-    return; 
-  }
+  if(!codeRaw){ res.innerHTML = `<p class="warn">Ingresa tu código (ej: CL-BOL-001).</p>`; input.focus(); return; }
   res.innerHTML = `<p>Cargando…</p>`;
 
   try{
     const data = await fetchData();
-
-    // Buscar en array (Google Sheets) o en objeto (JSON local)
-    let envio;
-    if (Array.isArray(data)) {
-      envio = data.find(item => (item.codigo || "").toUpperCase() === codeRaw);
-    } else {
-      envio = data[codeRaw];
-    }
-
-    if(!envio){ 
-      res.innerHTML = `<p class="warn">Código no encontrado. Verifica y vuelve a intentar.</p>`; 
-      return; 
-    }
-
-    // Si historial viene como string JSON → parsear
-    if (typeof envio.historial === "string") {
-      try { envio.historial = JSON.parse(envio.historial); } catch(e) { envio.historial = []; }
-    }
-
+    const envio = data[codeRaw];
+    if(!envio){ res.innerHTML = `<p class="warn">Código no encontrado. Verifica y vuelve a intentar.</p>`; return; }
     const rutaDef = ROUTES[envio.ruta_id];
     renderResult(codeRaw, envio, rutaDef);
   }catch(err){
