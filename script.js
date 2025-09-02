@@ -82,13 +82,34 @@ async function buscar(){
   const input = $("#codigo");
   const codeRaw = (input.value||"").trim().toUpperCase();
   const res = $("#resultado");
-  if(!codeRaw){ res.innerHTML = `<p class="warn">Ingresa tu código (ej: CL-BOL-001).</p>`; input.focus(); return; }
+  if(!codeRaw){ 
+    res.innerHTML = `<p class="warn">Ingresa tu código (ej: CL-BOL-001).</p>`; 
+    input.focus(); 
+    return; 
+  }
   res.innerHTML = `<p>Cargando…</p>`;
 
   try{
     const data = await fetchData();
-    const envio = data[codeRaw];
-    if(!envio){ res.innerHTML = `<p class="warn">Código no encontrado. Verifica y vuelve a intentar.</p>`; return; }
+
+    // Buscar en array (Google Sheets) o en objeto (JSON local)
+    let envio;
+    if (Array.isArray(data)) {
+      envio = data.find(item => (item.codigo || "").toUpperCase() === codeRaw);
+    } else {
+      envio = data[codeRaw];
+    }
+
+    if(!envio){ 
+      res.innerHTML = `<p class="warn">Código no encontrado. Verifica y vuelve a intentar.</p>`; 
+      return; 
+    }
+
+    // Si historial viene como string JSON → parsear
+    if (typeof envio.historial === "string") {
+      try { envio.historial = JSON.parse(envio.historial); } catch(e) { envio.historial = []; }
+    }
+
     const rutaDef = ROUTES[envio.ruta_id];
     renderResult(codeRaw, envio, rutaDef);
   }catch(err){
@@ -101,6 +122,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
   $("#btnBuscar")?.addEventListener("click", buscar);
   $("#codigo")?.addEventListener("keydown", (e)=>{ if(e.key==="Enter"){ e.preventDefault(); buscar(); }});
 });
+
 // ===== Formulario de contacto (Formspree con AJAX) =====
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contact-form");
