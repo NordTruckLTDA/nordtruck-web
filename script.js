@@ -1,6 +1,6 @@
 // ===== Config =====
 const DATA_SOURCE = "sheets"; // ahora usamos Google Sheets
-let SHEETS_URL = "https://script.google.com/macros/s/AKfycbyg9bbJIXmYLvZMFOPpHGgVke1ekzOinK9xZIwb5UJEpnFAvbrSi4Eu_PrNPPObYlWkHg/exec";
+let SHEETS_URL = "https://script.google.com/macros/s/AKfycbxnCAyhSau0xxWM1Xbry2PRGB02lJU650k5c8xFCptDQG_fBeMcczP-VzqET5Kyls68YA/exec";
 
 // ===== Util =====
 const $ = (q) => document.querySelector(q);
