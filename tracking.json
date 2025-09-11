@@ -41,7 +41,7 @@
       {"fecha":"2025-08-25 17:40","ubicacion":"Santa Cruz","nota":"Entregado al cliente"}
     ]
   },
-    "CL-BOL-004": {
+  "CL-BOL-004": {
     "estado": "En tránsito",
     "ultima_ubicacion": "Oruro",
     "fecha_estimada": "2025-09-25",
@@ -54,4 +54,5 @@
       {"fecha":"2025-08-24 11:30","ubicacion":"Oruro"},
       {"fecha":"2025-08-25 17:40","ubicacion":"Cochabamba","nota":"Entregado al cliente"}
     ]
+  }
 }
