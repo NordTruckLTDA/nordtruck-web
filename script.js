@@ -36,7 +36,32 @@ const ROUTES = {
   "ari_cbba_tambo": { name: "Arica → Cochabamba (Chungará–Tambo Quemado)", stops: ["Arica","Chungará","Tambo Quemado","La Paz","Oruro","Cochabamba"] },
   "ari_cbba_pisiga": { name: "Arica → Cochabamba (Colchane–Pisiga)", stops: ["Arica","Iquique","Colchane","Pisiga","Oruro","Cochabamba"] },
   "ari_scz_tambo": { name: "Arica → Santa Cruz (Chungará–Tambo Quemado)", stops: ["Arica","Chungará","Tambo Quemado","La Paz","Cochabamba","Santa Cruz"] },
-  "ari_scz_pisiga": { name: "Arica → Santa Cruz (Colchane–Pisiga)", stops: ["Arica","Iquique","Colchane","Pisiga","Oruro","Cochabamba","Santa Cruz"] }
+  "ari_scz_pisiga": { name: "Arica → Santa Cruz (Colchane–Pisiga)", stops: ["Arica","Iquique","Colchane","Pisiga","Oruro","Cochabamba","Santa Cruz"] },
+  // ===== Nuevas rutas Bolivia → Chile =====
+  "lpz_iqq_pisiga": { 
+    name: "La Paz → Iquique (Pisiga–Colchane)", 
+    stops: ["La Paz","Sica Sica","Caracollo","Oruro","Sabaya","Pisiga","Colchane","Huara","Alto Hospicio","Iquique"] 
+  },
+  "lpz_iqq_tambo": { 
+    name: "La Paz → Iquique (Tambo Quemado–Chungará)", 
+    stops: ["La Paz","Patacamaya","Tambo Quemado","Chungará","Arica","Ruta 5 Norte","Iquique"] 
+  },
+  "cbba_iqq_pisiga": { 
+    name: "Cochabamba → Iquique (Pisiga–Colchane)", 
+    stops: ["Cochabamba","Vinto","Oruro","Sabaya","Pisiga","Colchane","Huara","Iquique"] 
+  },
+  "scz_iqq_pisiga": { 
+    name: "Santa Cruz → Iquique (Pisiga–Colchane)", 
+    stops: ["Santa Cruz","Montero","Villa Tunari","Cochabamba","Oruro","Pisiga","Colchane","Huara","Iquique"] 
+  },
+  "scz_iqq_tambo": { 
+    name: "Santa Cruz → Iquique (Tambo Quemado–Chungará)", 
+    stops: ["Santa Cruz","Montero","Villa Tunari","Cochabamba","Oruro","La Paz","Patacamaya","Tambo Quemado","Chungará","Arica","Ruta 5 Norte","Iquique"] 
+  },
+  "cbba_iqq_tambo": { 
+    name: "Cochabamba → Iquique (Tambo Quemado–Chungará)", 
+    stops: ["Cochabamba","Oruro","La Paz","Patacamaya","Tambo Quemado","Chungará","Arica","Ruta 5 Norte","Iquique"] 
+  }
 };
 
 // ===== Render =====
