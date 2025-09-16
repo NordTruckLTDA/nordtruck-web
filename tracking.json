@@ -54,5 +54,19 @@
       {"fecha":"2025-08-24 11:30","ubicacion":"Oruro"},
       {"fecha":"2025-08-25 17:40","ubicacion":"Cochabamba","nota":"Entregado al cliente"}
     ]
+  },
+  {
+  "BOL-CL-001": {
+    "estado": "En tránsito",
+    "ultima_ubicacion": "Oruro",
+    "fecha_estimada": "2025-09-06",
+    "origen": "La Paz",
+    "destino": "Iquique",
+    "ruta_id": "lpz_iqq_pisiga",
+    "actualizado": "2025-09-01 12:00",
+    "historial": [
+      {"fecha":"2025-09-01 08:00","ubicacion":"La Paz","nota":"Salida desde La Paz"},
+      {"fecha":"2025-09-01 11:30","ubicacion":"Oruro","nota":"Camino a Pisiga"}
+    ]
   }
 }
