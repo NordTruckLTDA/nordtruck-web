@@ -1,101 +1,100 @@
 {
-  "CL-BOL-001": {
-    "cliente": "Comercial Andina",
-    "estado": "En tránsito",
-    "ultima_ubicacion": "Oruro",
-    "fecha_estimada": "2025-09-15",
-    "origen": "Iquique",
-    "destino": "La Paz",
-    "ruta_id": "iq_lpz_pisiga",
-    "actualizado": "2025-09-12 10:30",
-    "historial": [
-      {"fecha":"2025-09-11 08:10","ubicacion":"Iquique","nota":"Salida de depósito"},
-      {"fecha":"2025-09-11 22:40","ubicacion":"Pisiga","nota":"Ingreso a Bolivia"},
-      {"fecha":"2025-09-12 09:00","ubicacion":"Oruro","nota":"En tránsito"}
-    ]
-  },
-  "CL-BOL-002": {
-    "cliente": "Importadora Pacífico",
-    "estado": "Despachado",
-    "ultima_ubicacion": "Iquique",
-    "fecha_estimada": "2025-09-20",
+  "CL-BOL-005": {
+    "cliente": "Constructora Andina",
+    "estado": "Entregado",
+    "ultima_ubicacion": "Cochabamba",
+    "fecha_estimada": "2025-09-10",
     "origen": "Iquique",
     "destino": "Cochabamba",
     "ruta_id": "iq_cbba_tambo",
-    "actualizado": "2025-09-13 14:00",
+    "actualizado": "2025-09-10 18:45",
     "historial": [
-      {"fecha":"2025-09-13 14:00","ubicacion":"Iquique","nota":"Despachado desde depósito"}
-    ]
-  },
-  "CL-BOL-003": {
-    "cliente": "Distribuidora Sur",
-    "estado": "Entregado",
-    "ultima_ubicacion": "Santa Cruz",
-    "fecha_estimada": "2025-09-10",
-    "origen": "Arica",
-    "destino": "Santa Cruz",
-    "ruta_id": "ari_scz_tambo",
-    "actualizado": "2025-09-10 18:00",
-    "historial": [
-      {"fecha":"2025-09-08 07:30","ubicacion":"Arica","nota":"Salida desde bodega"},
-      {"fecha":"2025-09-09 12:00","ubicacion":"La Paz","nota":"En tránsito"},
-      {"fecha":"2025-09-10 18:00","ubicacion":"Santa Cruz","nota":"Entregado al cliente"}
-    ]
-  },
-  "CL-BOL-004": {
-    "cliente": "AgroBolivia",
-    "estado": "En aduana",
-    "ultima_ubicacion": "La Paz",
-    "fecha_estimada": "2025-09-18",
-    "origen": "Iquique",
-    "destino": "La Paz",
-    "ruta_id": "iq_lpz_tambo",
-    "actualizado": "2025-09-12 16:45",
-    "historial": [
-      {"fecha":"2025-09-11 06:00","ubicacion":"Iquique","nota":"Salida de depósito"},
-      {"fecha":"2025-09-12 16:45","ubicacion":"La Paz","nota":"Aduana Interior"}
-    ]
-  },
-  "BOL-CL-001": {
-    "cliente": "Minerales Altiplano",
-    "estado": "En tránsito",
-    "ultima_ubicacion": "Pisiga",
-    "fecha_estimada": "2025-09-17",
-    "origen": "La Paz",
-    "destino": "Iquique",
-    "ruta_id": "lpz_iqq_pisiga",
-    "actualizado": "2025-09-13 11:30",
-    "historial": [
-      {"fecha":"2025-09-13 08:00","ubicacion":"La Paz","nota":"Salida desde La Paz"},
-      {"fecha":"2025-09-13 11:30","ubicacion":"Pisiga","nota":"Cruce de frontera"}
+      {"fecha": "2025-09-08 09:00", "ubicacion": "Iquique", "nota": "Salida de depósito"},
+      {"fecha": "2025-09-09 13:30", "ubicacion": "Tambo Quemado", "nota": "Cruce de frontera"},
+      {"fecha": "2025-09-10 18:30", "ubicacion": "Cochabamba", "nota": "Entrega finalizada"}
     ]
   },
   "BOL-CL-002": {
-    "cliente": "Textiles Andinos",
-    "estado": "Despachado",
-    "ultima_ubicacion": "Santa Cruz",
-    "fecha_estimada": "2025-09-22",
-    "origen": "Santa Cruz",
-    "destino": "Arica",
-    "ruta_id": "scz_iqq_tambo",
-    "actualizado": "2025-09-13 09:00",
-    "historial": [
-      {"fecha":"2025-09-13 09:00","ubicacion":"Santa Cruz","nota":"Despachado desde planta"}
-    ]
-  },
-  "BOL-CL-003": {
-    "cliente": "Café del Valle",
+    "cliente": "AgroExport Ltda.",
     "estado": "Entregado",
     "ultima_ubicacion": "Iquique",
     "fecha_estimada": "2025-09-12",
+    "origen": "Santa Cruz",
+    "destino": "Iquique",
+    "ruta_id": "scz_iqq_pisiga",
+    "actualizado": "2025-09-12 16:20",
+    "historial": [
+      {"fecha": "2025-09-10 06:00", "ubicacion": "Santa Cruz", "nota": "Salida de planta"},
+      {"fecha": "2025-09-11 15:00", "ubicacion": "Pisiga", "nota": "Ingreso a Chile"},
+      {"fecha": "2025-09-12 16:20", "ubicacion": "Iquique", "nota": "Mercancía entregada"}
+    ]
+  },
+  "CL-BOL-006": {
+    "cliente": "Distribuidora Altiplano",
+    "estado": "En tránsito",
+    "ultima_ubicacion": "Patacamaya",
+    "fecha_estimada": "2025-09-15",
+    "origen": "Arica",
+    "destino": "La Paz",
+    "ruta_id": "ari_lpz_tambo",
+    "actualizado": "2025-09-13 11:00",
+    "historial": [
+      {"fecha": "2025-09-12 07:00", "ubicacion": "Arica", "nota": "Carga en ruta"},
+      {"fecha": "2025-09-13 11:00", "ubicacion": "Patacamaya", "nota": "En tránsito hacia La Paz"}
+    ]
+  },
+  "BOL-CL-003": {
+    "cliente": "Importadora del Sur",
+    "estado": "En tránsito",
+    "ultima_ubicacion": "Oruro",
+    "fecha_estimada": "2025-09-18",
     "origen": "Cochabamba",
     "destino": "Iquique",
-    "ruta_id": "cbba_iqq_tambo",
-    "actualizado": "2025-09-12 20:00",
+    "ruta_id": "cbba_iqq_pisiga",
+    "actualizado": "2025-09-13 19:45",
     "historial": [
-      {"fecha":"2025-09-11 10:00","ubicacion":"Cochabamba","nota":"Salida desde bodega"},
-      {"fecha":"2025-09-12 16:00","ubicacion":"Arica","nota":"Cruce de frontera"},
-      {"fecha":"2025-09-12 20:00","ubicacion":"Iquique","nota":"Entregado al cliente"}
+      {"fecha": "2025-09-13 08:30", "ubicacion": "Cochabamba", "nota": "Salida de bodega"},
+      {"fecha": "2025-09-13 19:45", "ubicacion": "Oruro", "nota": "Pernocte programado"}
+    ]
+  },
+  "CL-BOL-007": {
+    "cliente": "Comercial Oriente",
+    "estado": "En tránsito",
+    "ultima_ubicacion": "Chungará",
+    "fecha_estimada": "2025-09-16",
+    "origen": "Arica",
+    "destino": "Santa Cruz",
+    "ruta_id": "ari_scz_tambo",
+    "actualizado": "2025-09-13 14:20",
+    "historial": [
+      {"fecha": "2025-09-12 22:00", "ubicacion": "Arica", "nota": "Salida del puerto"},
+      {"fecha": "2025-09-13 14:20", "ubicacion": "Chungará", "nota": "Cruce de frontera completado"}
+    ]
+  },
+  "BOL-CL-004": {
+    "cliente": "Minerales Andinos",
+    "estado": "Despachado",
+    "ultima_ubicacion": "La Paz",
+    "fecha_estimada": "2025-09-20",
+    "origen": "La Paz",
+    "destino": "Iquique",
+    "ruta_id": "lpz_iqq_tambo",
+    "actualizado": "2025-09-13 09:00",
+    "historial": [
+      {"fecha": "2025-09-13 09:00", "ubicacion": "La Paz", "nota": "Salida de almacén central"}
+    ]
+  },
+  "CL-BOL-008": {
+    "cliente": "Supermercados Unidos",
+    "estado": "Despachado",
+    "ultima_ubicacion": "Iquique",
+    "fecha_estimada": "2025-09-21",
+    "origen": "Iquique",
+    "destino": "Santa Cruz",
+    "ruta_id": "iq_scz_tambo",
+    "actualizado": "2025-09-13 10:30",
+    "historial": [
+      {"fecha": "2025-09-13 10:30", "ubicacion": "Iquique", "nota": "Mercancía despachada en ruta a Santa Cruz"}
     ]
   }
 }
