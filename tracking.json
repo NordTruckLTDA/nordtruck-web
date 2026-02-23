@@ -1,326 +1,331 @@
 {
-  "CL-BOL-009": {
-    "cliente": "Industrias Metalúrgicas del Norte",
-    "mercancia": "Manufactura - Repuestos industriales",
+  "CL-BOL-020": {
+    "cliente": "Metalúrgica Andina SpA",
+    "mercancia": "Manufactura - Estructuras de acero",
     "estado": "Entregado",
     "ultima_ubicacion": "La Paz",
-    "fecha_estimada": "2025-09-22",
+    "fecha_estimada": "2025-10-18",
     "origen": "Iquique",
     "destino": "La Paz",
     "ruta_id": "iq_lpz_tambo",
-    "actualizado": "2025-09-22 16:40",
+    "actualizado": "2025-10-18 17:40",
     "historial": [
-      {"fecha": "2025-09-17 08:00", "ubicacion": "Iquique", "nota": "Salida de depósito"},
-      {"fecha": "2025-09-19 14:20", "ubicacion": "Tambo Quemado", "nota": "Cruce fronterizo"},
-      {"fecha": "2025-09-22 16:40", "ubicacion": "La Paz", "nota": "Entrega completada"}
+      {"fecha": "2025-10-13 08:10", "ubicacion": "Iquique", "nota": "Salida de puerto"},
+      {"fecha": "2025-10-15 14:20", "ubicacion": "Tambo Quemado", "nota": "Cruce fronterizo"},
+      {"fecha": "2025-10-18 17:40", "ubicacion": "La Paz", "nota": "Entrega completada"}
     ]
   },
 
-  "CL-BOL-010": {
-    "cliente": "Alimentos Pacífico SpA",
-    "mercancia": "Alimentos - Conservas y abarrotes",
+  "BOL-CL-014": {
+    "cliente": "AgroExport Bolivia SRL",
+    "mercancia": "Alimentos - Quinua procesada",
     "estado": "Entregado",
-    "ultima_ubicacion": "Cochabamba",
-    "fecha_estimada": "2025-09-25",
-    "origen": "Arica",
-    "destino": "Cochabamba",
-    "ruta_id": "ari_cbba_tambo",
-    "actualizado": "2025-09-25 18:10",
-    "historial": [
-      {"fecha": "2025-09-19 07:30", "ubicacion": "Arica", "nota": "Salida de centro logístico"},
-      {"fecha": "2025-09-21 15:00", "ubicacion": "Tambo Quemado", "nota": "Ingreso a Bolivia"},
-      {"fecha": "2025-09-25 18:10", "ubicacion": "Cochabamba", "nota": "Mercadería entregada"}
-    ]
-  },
-
-  "BOL-CL-005": {
-    "cliente": "Laboratorios Andinos SRL",
-    "mercancia": "Farmacéuticos - Medicamentos genéricos",
-    "estado": "Entregado",
-    "ultima_ubicacion": "Iquique",
-    "fecha_estimada": "2025-09-28",
-    "origen": "Santa Cruz",
-    "destino": "Iquique",
-    "ruta_id": "scz_iqq_pisiga",
-    "actualizado": "2025-09-28 13:20",
-    "historial": [
-      {"fecha": "2025-09-20 06:00", "ubicacion": "Santa Cruz", "nota": "Salida de laboratorio"},
-      {"fecha": "2025-09-24 12:00", "ubicacion": "Pisiga", "nota": "Cruce fronterizo"},
-      {"fecha": "2025-09-28 13:20", "ubicacion": "Iquique", "nota": "Recepción en bodega"}
-    ]
-  },
-
-  "CL-BOL-011": {
-    "cliente": "Farmacéutica del Pacífico",
-    "mercancia": "Farmacéuticos - Insumos hospitalarios",
-    "estado": "En tránsito",
-    "ultima_ubicacion": "Oruro",
-    "fecha_estimada": "2025-10-06",
-    "origen": "Iquique",
-    "destino": "Santa Cruz",
-    "ruta_id": "iq_scz_pisiga",
-    "actualizado": "2025-10-03 10:15",
-    "historial": [
-      {"fecha": "2025-09-27 09:00", "ubicacion": "Iquique", "nota": "Salida de puerto"},
-      {"fecha": "2025-09-30 16:30", "ubicacion": "Pisiga", "nota": "Ingreso a Bolivia"},
-      {"fecha": "2025-10-03 10:15", "ubicacion": "Oruro", "nota": "En tránsito hacia Santa Cruz"}
-    ]
-  },
-
-  "BOL-CL-006": {
-    "cliente": "Exportadora AgroSur",
-    "mercancia": "Alimentos - Soya procesada",
-    "estado": "En tránsito",
-    "ultima_ubicacion": "Patacamaya",
-    "fecha_estimada": "2025-10-07",
-    "origen": "Cochabamba",
-    "destino": "Arica",
-    "ruta_id": "cbba_ari_tambo",
-    "actualizado": "2025-10-03 12:40",
-    "historial": [
-      {"fecha": "2025-09-29 07:20", "ubicacion": "Cochabamba", "nota": "Salida de planta"},
-      {"fecha": "2025-10-03 12:40", "ubicacion": "Patacamaya", "nota": "En tránsito hacia frontera"}
-    ]
-  },
-
-  "CL-BOL-012": {
-    "cliente": "Maquinaria Industrial Norte",
-    "mercancia": "Manufactura - Equipos de perforación",
-    "estado": "Despachado",
     "ultima_ubicacion": "Arica",
-    "fecha_estimada": "2025-10-10",
-    "origen": "Arica",
-    "destino": "La Paz",
-    "ruta_id": "ari_lpz_tambo",
-    "actualizado": "2025-10-03 09:10",
+    "fecha_estimada": "2025-11-02",
+    "origen": "Oruro",
+    "destino": "Arica",
+    "ruta_id": "oru_ari_tambo",
+    "actualizado": "2025-11-02 16:15",
     "historial": [
-      {"fecha": "2025-10-03 09:10", "ubicacion": "Arica", "nota": "Salida programada"}
+      {"fecha": "2025-10-27 07:30", "ubicacion": "Oruro", "nota": "Salida de planta"},
+      {"fecha": "2025-10-30 12:40", "ubicacion": "Tambo Quemado", "nota": "Ingreso a Chile"},
+      {"fecha": "2025-11-02 16:15", "ubicacion": "Arica", "nota": "Recepción en bodega"}
     ]
   },
 
-  "BOL-CL-007": {
-    "cliente": "BioSalud Bolivia",
-    "mercancia": "Farmacéuticos - Vacunas refrigeradas",
-    "estado": "Despachado",
-    "ultima_ubicacion": "La Paz",
-    "fecha_estimada": "2025-10-09",
-    "origen": "La Paz",
-    "destino": "Iquique",
-    "ruta_id": "lpz_iqq_tambo",
-    "actualizado": "2025-10-03 08:45",
-    "historial": [
-      {"fecha": "2025-10-03 08:45", "ubicacion": "La Paz", "nota": "Salida con cadena de frío activa"}
-    ]
-  },
-
-  "CL-BOL-013": {
-    "cliente": "Comercial Altiplano Ltda.",
-    "mercancia": "Alimentos - Bebidas no alcohólicas",
-    "estado": "En tránsito",
-    "ultima_ubicacion": "Tambo Quemado",
-    "fecha_estimada": "2025-10-08",
-    "origen": "Iquique",
-    "destino": "La Paz",
-    "ruta_id": "iq_lpz_tambo",
-    "actualizado": "2025-10-03 13:50",
-    "historial": [
-      {"fecha": "2025-09-30 10:00", "ubicacion": "Iquique", "nota": "Salida de bodega"},
-      {"fecha": "2025-10-03 13:50", "ubicacion": "Tambo Quemado", "nota": "En proceso aduanero"}
-    ]
-  },
-
-  "BOL-CL-008": {
-    "cliente": "Industrias Químicas Santa Cruz",
-    "mercancia": "Manufactura - Productos químicos industriales",
-    "estado": "En tránsito",
-    "ultima_ubicacion": "Oruro",
-    "fecha_estimada": "2025-10-09",
-    "origen": "Santa Cruz",
-    "destino": "Iquique",
-    "ruta_id": "scz_iqq_pisiga",
-    "actualizado": "2025-10-03 11:25",
-    "historial": [
-      {"fecha": "2025-09-28 06:30", "ubicacion": "Santa Cruz", "nota": "Salida de planta"},
-      {"fecha": "2025-10-03 11:25", "ubicacion": "Oruro", "nota": "Ruta hacia frontera Pisiga"}
-    ]
-  },
-
-  "CL-BOL-014": {
-    "cliente": "Tecnología Industrial Chile",
-    "mercancia": "Manufactura - Equipos eléctricos",
-    "estado": "Por concluir",
+  "CL-BOL-021": {
+    "cliente": "Laboratorios BioPacific",
+    "mercancia": "Farmacéuticos - Insumos hospitalarios",
+    "estado": "Entregado",
     "ultima_ubicacion": "Santa Cruz",
-    "fecha_estimada": "2025-10-04",
+    "fecha_estimada": "2025-11-20",
     "origen": "Arica",
     "destino": "Santa Cruz",
     "ruta_id": "ari_scz_tambo",
-    "actualizado": "2025-10-03 17:10",
+    "actualizado": "2025-11-20 18:05",
     "historial": [
-      {"fecha": "2025-09-26 08:20", "ubicacion": "Arica", "nota": "Salida de almacén"},
-      {"fecha": "2025-09-29 15:30", "ubicacion": "Tambo Quemado", "nota": "Cruce completado"},
-      {"fecha": "2025-10-03 17:10", "ubicacion": "Santa Cruz", "nota": "En distribución local"}
+      {"fecha": "2025-11-12 09:00", "ubicacion": "Arica", "nota": "Salida con cadena de frío"},
+      {"fecha": "2025-11-15 15:30", "ubicacion": "Tambo Quemado", "nota": "Cruce completado"},
+      {"fecha": "2025-11-20 18:05", "ubicacion": "Santa Cruz", "nota": "Entrega finalizada"}
     ]
   },
 
-  "BOL-CL-009": {
-    "cliente": "Alimentos del Oriente SRL",
-    "mercancia": "Alimentos - Harina y derivados",
-    "estado": "Entregado",
-    "ultima_ubicacion": "Arica",
-    "fecha_estimada": "2025-09-24",
-    "origen": "Cochabamba",
-    "destino": "Arica",
-    "ruta_id": "cbba_ari_tambo",
-    "actualizado": "2025-09-24 14:30",
-    "historial": [
-      {"fecha": "2025-09-18 07:00", "ubicacion": "Cochabamba", "nota": "Salida de molino"},
-      {"fecha": "2025-09-21 16:20", "ubicacion": "Tambo Quemado", "nota": "Cruce fronterizo"},
-      {"fecha": "2025-09-24 14:30", "ubicacion": "Arica", "nota": "Entrega completada"}
-    ]
-  },
-
-  "CL-BOL-015": {
-    "cliente": "Exportadora Norte Grande",
-    "mercancia": "Manufactura - Tubos de acero",
-    "estado": "Entregado",
-    "ultima_ubicacion": "Oruro",
-    "fecha_estimada": "2025-09-26",
-    "origen": "Iquique",
-    "destino": "Oruro",
-    "ruta_id": "iq_oru_pisiga",
-    "actualizado": "2025-09-26 17:50",
-    "historial": [
-      {"fecha": "2025-09-20 08:40", "ubicacion": "Iquique", "nota": "Salida de puerto"},
-      {"fecha": "2025-09-23 13:00", "ubicacion": "Pisiga", "nota": "Ingreso a Bolivia"},
-      {"fecha": "2025-09-26 17:50", "ubicacion": "Oruro", "nota": "Entrega finalizada"}
-    ]
-  },
-
-  "BOL-CL-010": {
-    "cliente": "Laboratorios VidaPlena",
-    "mercancia": "Farmacéuticos - Antibióticos",
-    "estado": "En tránsito",
-    "ultima_ubicacion": "Pisiga",
-    "fecha_estimada": "2025-10-08",
-    "origen": "La Paz",
-    "destino": "Iquique",
-    "ruta_id": "lpz_iqq_pisiga",
-    "actualizado": "2025-10-03 12:05",
-    "historial": [
-      {"fecha": "2025-09-29 09:00", "ubicacion": "La Paz", "nota": "Salida de laboratorio"},
-      {"fecha": "2025-10-03 12:05", "ubicacion": "Pisiga", "nota": "En control aduanero"}
-    ]
-  },
-
-  "CL-BOL-016": {
-    "cliente": "Distribuidora Alimentaria Andina",
-    "mercancia": "Alimentos - Productos enlatados",
-    "estado": "En tránsito",
-    "ultima_ubicacion": "Patacamaya",
-    "fecha_estimada": "2025-10-09",
-    "origen": "Arica",
-    "destino": "La Paz",
-    "ruta_id": "ari_lpz_tambo",
-    "actualizado": "2025-10-03 15:20",
-    "historial": [
-      {"fecha": "2025-09-30 07:10", "ubicacion": "Arica", "nota": "Salida de centro logístico"},
-      {"fecha": "2025-10-03 15:20", "ubicacion": "Patacamaya", "nota": "En tránsito hacia destino"}
-    ]
-  },
-
-  "BOL-CL-011": {
-    "cliente": "Industrias del Valle",
+  "BOL-CL-015": {
+    "cliente": "Industrias del Oriente",
     "mercancia": "Manufactura - Componentes mecánicos",
-    "estado": "Por concluir",
+    "estado": "Entregado",
     "ultima_ubicacion": "Iquique",
-    "fecha_estimada": "2025-10-04",
+    "fecha_estimada": "2025-12-05",
     "origen": "Santa Cruz",
     "destino": "Iquique",
     "ruta_id": "scz_iqq_pisiga",
-    "actualizado": "2025-10-03 18:00",
+    "actualizado": "2025-12-05 14:30",
     "historial": [
-      {"fecha": "2025-09-25 06:30", "ubicacion": "Santa Cruz", "nota": "Salida de planta"},
-      {"fecha": "2025-09-29 14:50", "ubicacion": "Pisiga", "nota": "Ingreso a Chile"},
-      {"fecha": "2025-10-03 18:00", "ubicacion": "Iquique", "nota": "En distribución final"}
+      {"fecha": "2025-11-28 06:40", "ubicacion": "Santa Cruz", "nota": "Salida de planta"},
+      {"fecha": "2025-12-02 11:20", "ubicacion": "Pisiga", "nota": "Ingreso a Chile"},
+      {"fecha": "2025-12-05 14:30", "ubicacion": "Iquique", "nota": "Entrega realizada"}
     ]
   },
 
-  "CL-BOL-017": {
-    "cliente": "Farmacia Central Bolivia",
-    "mercancia": "Farmacéuticos - Equipos médicos",
-    "estado": "Despachado",
-    "ultima_ubicacion": "Iquique",
-    "fecha_estimada": "2025-10-11",
+  "CL-BOL-022": {
+    "cliente": "Exportadora Norte Grande",
+    "mercancia": "Alimentos - Productos congelados",
+    "estado": "Entregado",
+    "ultima_ubicacion": "Cochabamba",
+    "fecha_estimada": "2025-12-18",
     "origen": "Iquique",
     "destino": "Cochabamba",
     "ruta_id": "iq_cbba_pisiga",
-    "actualizado": "2025-10-03 09:25",
+    "actualizado": "2025-12-18 16:50",
     "historial": [
-      {"fecha": "2025-10-03 09:25", "ubicacion": "Iquique", "nota": "Salida de bodega principal"}
+      {"fecha": "2025-12-12 07:10", "ubicacion": "Iquique", "nota": "Salida con cadena de frío"},
+      {"fecha": "2025-12-15 13:00", "ubicacion": "Pisiga", "nota": "Cruce fronterizo"},
+      {"fecha": "2025-12-18 16:50", "ubicacion": "Cochabamba", "nota": "Entrega al cliente"}
     ]
   },
 
-  "BOL-CL-012": {
-    "cliente": "AgroIndustrias del Sur",
-    "mercancia": "Alimentos - Azúcar refinada",
-    "estado": "Despachado",
-    "ultima_ubicacion": "Cochabamba",
-    "fecha_estimada": "2025-10-12",
-    "origen": "Cochabamba",
-    "destino": "Arica",
-    "ruta_id": "cbba_ari_tambo",
-    "actualizado": "2025-10-03 10:40",
-    "historial": [
-      {"fecha": "2025-10-03 10:40", "ubicacion": "Cochabamba", "nota": "Salida de planta azucarera"}
-    ]
-  },
-
-  "CL-BOL-018": {
-    "cliente": "Soluciones Industriales Chile",
-    "mercancia": "Manufactura - Motores eléctricos",
-    "estado": "En tránsito",
-    "ultima_ubicacion": "Pisiga",
-    "fecha_estimada": "2025-10-10",
-    "origen": "Arica",
-    "destino": "Oruro",
-    "ruta_id": "ari_oru_pisiga",
-    "actualizado": "2025-10-03 11:10",
-    "historial": [
-      {"fecha": "2025-09-29 08:30", "ubicacion": "Arica", "nota": "Salida de almacén"},
-      {"fecha": "2025-10-03 11:10", "ubicacion": "Pisiga", "nota": "Ingreso a Bolivia"}
-    ]
-  },
-
-  "BOL-CL-013": {
-    "cliente": "Laboratorios BioFarma",
-    "mercancia": "Farmacéuticos - Insulina refrigerada",
-    "estado": "En tránsito",
-    "ultima_ubicacion": "Oruro",
-    "fecha_estimada": "2025-10-08",
+  "BOL-CL-016": {
+    "cliente": "Laboratorios VidaSalud",
+    "mercancia": "Farmacéuticos - Antibióticos",
+    "estado": "Entregado",
+    "ultima_ubicacion": "Arica",
+    "fecha_estimada": "2026-01-08",
     "origen": "La Paz",
     "destino": "Arica",
     "ruta_id": "lpz_ari_tambo",
-    "actualizado": "2025-10-03 13:00",
+    "actualizado": "2026-01-08 12:10",
     "historial": [
-      {"fecha": "2025-09-30 07:50", "ubicacion": "La Paz", "nota": "Salida con cadena de frío"},
-      {"fecha": "2025-10-03 13:00", "ubicacion": "Oruro", "nota": "En tránsito hacia frontera"}
+      {"fecha": "2026-01-03 08:30", "ubicacion": "La Paz", "nota": "Salida de laboratorio"},
+      {"fecha": "2026-01-06 14:50", "ubicacion": "Tambo Quemado", "nota": "Ingreso a Chile"},
+      {"fecha": "2026-01-08 12:10", "ubicacion": "Arica", "nota": "Recepción confirmada"}
     ]
   },
 
-  "CL-BOL-019": {
-    "cliente": "Exportadora Mar del Norte",
-    "mercancia": "Alimentos - Productos congelados",
+  "CL-BOL-023": {
+    "cliente": "Maquinaria Industrial Chile",
+    "mercancia": "Manufactura - Equipos eléctricos",
     "estado": "Por concluir",
+    "ultima_ubicacion": "La Paz",
+    "fecha_estimada": "2026-02-24",
+    "origen": "Arica",
+    "destino": "La Paz",
+    "ruta_id": "ari_lpz_tambo",
+    "actualizado": "2026-02-23 17:20",
+    "historial": [
+      {"fecha": "2026-02-18 09:10", "ubicacion": "Arica", "nota": "Salida de almacén"},
+      {"fecha": "2026-02-21 15:40", "ubicacion": "Tambo Quemado", "nota": "Cruce fronterizo"},
+      {"fecha": "2026-02-23 17:20", "ubicacion": "La Paz", "nota": "En distribución final"}
+    ]
+  },
+
+  "BOL-CL-017": {
+    "cliente": "AgroIndustrias del Sur",
+    "mercancia": "Alimentos - Azúcar refinada",
+    "estado": "En tránsito",
+    "ultima_ubicacion": "Oruro",
+    "fecha_estimada": "2026-02-27",
+    "origen": "Cochabamba",
+    "destino": "Iquique",
+    "ruta_id": "cbba_iqq_pisiga",
+    "actualizado": "2026-02-23 13:45",
+    "historial": [
+      {"fecha": "2026-02-19 07:00", "ubicacion": "Cochabamba", "nota": "Salida de planta"},
+      {"fecha": "2026-02-23 13:45", "ubicacion": "Oruro", "nota": "Ruta hacia frontera Pisiga"}
+    ]
+  },
+
+  "CL-BOL-024": {
+    "cliente": "Distribuidora Alimentaria Andina",
+    "mercancia": "Alimentos - Conservas",
+    "estado": "En tránsito",
+    "ultima_ubicacion": "Pisiga",
+    "fecha_estimada": "2026-02-26",
+    "origen": "Iquique",
+    "destino": "Oruro",
+    "ruta_id": "iq_oru_pisiga",
+    "actualizado": "2026-02-23 11:30",
+    "historial": [
+      {"fecha": "2026-02-20 08:00", "ubicacion": "Iquique", "nota": "Salida de centro logístico"},
+      {"fecha": "2026-02-23 11:30", "ubicacion": "Pisiga", "nota": "Ingreso a Bolivia"}
+    ]
+  },
+
+  "BOL-CL-018": {
+    "cliente": "BioFarma Bolivia",
+    "mercancia": "Farmacéuticos - Vacunas refrigeradas",
+    "estado": "Despachado",
+    "ultima_ubicacion": "La Paz",
+    "fecha_estimada": "2026-03-01",
+    "origen": "La Paz",
+    "destino": "Arica",
+    "ruta_id": "lpz_ari_tambo",
+    "actualizado": "2026-02-23 09:15",
+    "historial": [
+      {"fecha": "2026-02-23 09:15", "ubicacion": "La Paz", "nota": "Salida con cadena de frío activa"}
+    ]
+  },
+
+  "CL-BOL-025": {
+    "cliente": "Tecnometal Chile Ltda.",
+    "mercancia": "Manufactura - Maquinaria industrial",
+    "estado": "Entregado",
     "ultima_ubicacion": "Cochabamba",
-    "fecha_estimada": "2025-10-04",
+    "fecha_estimada": "2025-10-30",
     "origen": "Iquique",
     "destino": "Cochabamba",
     "ruta_id": "iq_cbba_pisiga",
-    "actualizado": "2025-10-03 16:35",
+    "actualizado": "2025-10-30 17:10",
     "historial": [
-      {"fecha": "2025-09-26 06:40", "ubicacion": "Iquique", "nota": "Salida con cadena de frío"},
-      {"fecha": "2025-09-29 15:00", "ubicacion": "Pisiga", "nota": "Cruce fronterizo"},
-      {"fecha": "2025-10-03 16:35", "ubicacion": "Cochabamba", "nota": "Entrega programada para mañana"}
+      {"fecha": "2025-10-24 08:00", "ubicacion": "Iquique", "nota": "Salida de zona franca"},
+      {"fecha": "2025-10-27 14:30", "ubicacion": "Pisiga", "nota": "Ingreso a Bolivia"},
+      {"fecha": "2025-10-30 17:10", "ubicacion": "Cochabamba", "nota": "Entrega completada"}
+    ]
+  },
+
+  "BOL-CL-019": {
+    "cliente": "Molinos del Altiplano SRL",
+    "mercancia": "Alimentos - Harina industrial",
+    "estado": "Entregado",
+    "ultima_ubicacion": "Arica",
+    "fecha_estimada": "2025-11-18",
+    "origen": "La Paz",
+    "destino": "Arica",
+    "ruta_id": "lpz_ari_tambo",
+    "actualizado": "2025-11-18 15:25",
+    "historial": [
+      {"fecha": "2025-11-13 07:20", "ubicacion": "La Paz", "nota": "Salida de molino"},
+      {"fecha": "2025-11-16 13:40", "ubicacion": "Tambo Quemado", "nota": "Cruce fronterizo"},
+      {"fecha": "2025-11-18 15:25", "ubicacion": "Arica", "nota": "Entrega finalizada"}
+    ]
+  },
+
+  "CL-BOL-026": {
+    "cliente": "Laboratorios Andinos SpA",
+    "mercancia": "Farmacéuticos - Equipos médicos",
+    "estado": "Entregado",
+    "ultima_ubicacion": "Santa Cruz",
+    "fecha_estimada": "2025-12-12",
+    "origen": "Arica",
+    "destino": "Santa Cruz",
+    "ruta_id": "ari_scz_tambo",
+    "actualizado": "2025-12-12 18:20",
+    "historial": [
+      {"fecha": "2025-12-04 09:00", "ubicacion": "Arica", "nota": "Salida en camión especializado"},
+      {"fecha": "2025-12-08 16:10", "ubicacion": "Tambo Quemado", "nota": "Ingreso a Bolivia"},
+      {"fecha": "2025-12-12 18:20", "ubicacion": "Santa Cruz", "nota": "Entrega completada"}
+    ]
+  },
+
+  "BOL-CL-020": {
+    "cliente": "AgroSanta Cruz Export",
+    "mercancia": "Alimentos - Aceite vegetal",
+    "estado": "Entregado",
+    "ultima_ubicacion": "Iquique",
+    "fecha_estimada": "2026-01-15",
+    "origen": "Santa Cruz",
+    "destino": "Iquique",
+    "ruta_id": "scz_iqq_pisiga",
+    "actualizado": "2026-01-15 16:40",
+    "historial": [
+      {"fecha": "2026-01-08 06:30", "ubicacion": "Santa Cruz", "nota": "Salida de planta"},
+      {"fecha": "2026-01-12 12:50", "ubicacion": "Pisiga", "nota": "Ingreso a Chile"},
+      {"fecha": "2026-01-15 16:40", "ubicacion": "Iquique", "nota": "Recepción confirmada"}
+    ]
+  },
+
+  "CL-BOL-027": {
+    "cliente": "Estructuras del Pacífico",
+    "mercancia": "Manufactura - Perfiles metálicos",
+    "estado": "Entregado",
+    "ultima_ubicacion": "La Paz",
+    "fecha_estimada": "2026-01-28",
+    "origen": "Iquique",
+    "destino": "La Paz",
+    "ruta_id": "iq_lpz_tambo",
+    "actualizado": "2026-01-28 17:55",
+    "historial": [
+      {"fecha": "2026-01-23 08:15", "ubicacion": "Iquique", "nota": "Salida de depósito"},
+      {"fecha": "2026-01-26 14:00", "ubicacion": "Tambo Quemado", "nota": "Cruce fronterizo"},
+      {"fecha": "2026-01-28 17:55", "ubicacion": "La Paz", "nota": "Entrega realizada"}
+    ]
+  },
+
+  "BOL-CL-021": {
+    "cliente": "PharmaVida Bolivia",
+    "mercancia": "Farmacéuticos - Medicamentos genéricos",
+    "estado": "Por concluir",
+    "ultima_ubicacion": "Arica",
+    "fecha_estimada": "2026-02-25",
+    "origen": "Cochabamba",
+    "destino": "Arica",
+    "ruta_id": "cbba_ari_tambo",
+    "actualizado": "2026-02-23 18:10",
+    "historial": [
+      {"fecha": "2026-02-19 07:45", "ubicacion": "Cochabamba", "nota": "Salida de laboratorio"},
+      {"fecha": "2026-02-22 15:20", "ubicacion": "Tambo Quemado", "nota": "Ingreso a Chile"},
+      {"fecha": "2026-02-23 18:10", "ubicacion": "Arica", "nota": "En bodega, pendiente entrega final"}
+    ]
+  },
+
+  "CL-BOL-028": {
+    "cliente": "Alimentos del Norte SpA",
+    "mercancia": "Alimentos - Productos enlatados",
+    "estado": "En tránsito",
+    "ultima_ubicacion": "Oruro",
+    "fecha_estimada": "2026-02-28",
+    "origen": "Arica",
+    "destino": "Cochabamba",
+    "ruta_id": "ari_cbba_tambo",
+    "actualizado": "2026-02-23 14:35",
+    "historial": [
+      {"fecha": "2026-02-20 09:00", "ubicacion": "Arica", "nota": "Salida de centro logístico"},
+      {"fecha": "2026-02-23 14:35", "ubicacion": "Oruro", "nota": "En tránsito hacia Cochabamba"}
+    ]
+  },
+
+  "BOL-CL-022": {
+    "cliente": "Industrias Mecánicas Altiplano",
+    "mercancia": "Manufactura - Piezas automotrices",
+    "estado": "En tránsito",
+    "ultima_ubicacion": "Pisiga",
+    "fecha_estimada": "2026-02-27",
+    "origen": "La Paz",
+    "destino": "Iquique",
+    "ruta_id": "lpz_iqq_pisiga",
+    "actualizado": "2026-02-23 12:50",
+    "historial": [
+      {"fecha": "2026-02-19 08:30", "ubicacion": "La Paz", "nota": "Salida de planta"},
+      {"fecha": "2026-02-23 12:50", "ubicacion": "Pisiga", "nota": "Cruce hacia Chile en proceso"}
+    ]
+  },
+
+  "CL-BOL-029": {
+    "cliente": "BioExport Chile",
+    "mercancia": "Farmacéuticos - Equipos de laboratorio",
+    "estado": "Despachado",
+    "ultima_ubicacion": "Iquique",
+    "fecha_estimada": "2026-03-02",
+    "origen": "Iquique",
+    "destino": "Santa Cruz",
+    "ruta_id": "iq_scz_pisiga",
+    "actualizado": "2026-02-23 10:05",
+    "historial": [
+      {"fecha": "2026-02-23 10:05", "ubicacion": "Iquique", "nota": "Salida programada hacia Bolivia"}
+    ]
+  },
+
+  "BOL-CL-023": {
+    "cliente": "Alimentos Naturales del Oriente",
+    "mercancia": "Alimentos - Frutos secos",
+    "estado": "Despachado",
+    "ultima_ubicacion": "Santa Cruz",
+    "fecha_estimada": "2026-03-03",
+    "origen": "Santa Cruz",
+    "destino": "Arica",
+    "ruta_id": "scz_ari_pisiga",
+    "actualizado": "2026-02-23 09:40",
+    "historial": [
+      {"fecha": "2026-02-23 09:40", "ubicacion": "Santa Cruz", "nota": "Salida de almacén central"}
     ]
   }
 }
